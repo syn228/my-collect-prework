@@ -7,10 +7,10 @@ def my_collect(languages)
   languages
 end
 
-my_collect([array]) do |name|
+my_collect([languages]) do |name|
   name.split(" ").first
 end
 
-my_collect(collection) do |lang|
+my_collect(languages) do |lang|
   lang.upcase
 end
