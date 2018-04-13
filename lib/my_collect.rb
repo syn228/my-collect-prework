@@ -7,3 +7,4 @@ def my_collect(languages)
   end
   emptyArray
 end
+end
