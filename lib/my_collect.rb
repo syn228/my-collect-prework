@@ -1,16 +1,9 @@
 def my_collect(languages)
+  emptyArray = []
   counter = 0
   while counter < languages.length
-    yield  languages[counter].upcase
+    emptyArray << yield  languages[counter]
     counter += 1
   end
-  languages
-end
-
-my_collect(languages) do |name|
-  name.split(" ").first
-end
-
-my_collect(languages) do |lang|
-  lang.upcase
+  emptyArray
 end
