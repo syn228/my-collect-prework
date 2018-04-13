@@ -7,7 +7,7 @@ def my_collect(languages)
   languages
 end
 
-my_collect([languages]) do |name|
+my_collect(languages) do |name|
   name.split(" ").first
 end
 
